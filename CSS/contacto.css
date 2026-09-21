@@ -1,0 +1,61 @@
+.contacto {
+    max-width: 700px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Selector por atributo */
+
+input[required],
+textarea[required] {
+    border-left: 4px solid #222;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Selector combinado */
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #555;
+}
+
+/* Botón */
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.ubicacion {
+    text-align: center;
+}
+
+.ubicacion iframe {
+    max-width: 100%;
+}

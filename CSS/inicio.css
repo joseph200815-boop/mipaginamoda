@@ -1,0 +1,49 @@
+.bienvenida {
+    text-align: center;
+}
+
+.galeria h2 {
+    text-align: center;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.imagenes figure {
+    margin: 0;
+    text-align: center;
+}
+
+/* Selector por atributo */
+
+img[alt] {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Selector jerárquico */
+
+.imagenes figure figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+aside {
+    background-color: lch(93.7% 1.42 19.06);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+aside li {
+    margin-bottom: 8px;
+}
+
+
+

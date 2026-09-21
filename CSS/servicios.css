@@ -1,0 +1,45 @@
+/* Tabla */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+/* Selector combinado */
+
+tbody tr:hover {
+    background-color: #eee;
+}
+
+/* Lista */
+
+.servicios ol {
+    padding-left: 25px;
+}
+
+.servicios li {
+    margin-bottom: 10px;
+}
+
+/* Video */
+
+.video {
+    text-align: center;
+}
+
+.video video {
+    max-width: 100%;
+}
