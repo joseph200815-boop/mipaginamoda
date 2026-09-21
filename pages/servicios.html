@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicios - Moda Urbana</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="../index.html">
+                Moda Urbana
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="servicios.html">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section class="container py-5">
+
+            <h1 class="text-center mb-4">
+                Nuestros servicios
+            </h1>
+
+            <p class="text-center mb-5">
+                En Moda Urbana ofrecemos diferentes opciones para que
+                encuentres el estilo que buscas.
+            </p>
+
+
+            <!-- Tabla -->
+            <div class="table-responsive">
+
+                <table class="table table-dark table-striped table-hover">
+
+                    <thead>
+
+                        <tr>
+                            <th scope="col">Servicio</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Venta de Sacos</td>
+                            <td>sacos con diseños urbanos y modernos.</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Venta de pantalones</td>
+                            <td>Pantalones cómodos para un estilo urbano.</td>
+                            <td>$150.000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Venta de gorras</td>
+                            <td>gorras de alta calidad con bordados.</td>
+                            <td>$85.000</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <h2 class="text-center mt-5 mb-4">
+    Servicios destacados
+</h2>
+
+<ul class="list-group">
+
+    <li class="list-group-item">
+        Asesoría de moda
+    </li>
+
+    <li class="list-group-item">
+        Personalización de prendas
+    </li>
+
+    <li class="list-group-item">
+        Venta de ropa urbana
+    </li>
+
+</ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- Video -->
+        <section class="container pb-5">
+
+            <h2 class="text-center mb-4">
+                Conoce nuestro estilo
+            </h2>
+
+          <div class="ratio ratio-16x9">
+
+    <video controls>
+        <source src="../img/videourbano.mp4" type="video/mp4">
+
+        Tu navegador no puede reproducir este video.
+    </video>
+
+</div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+
+        <p class="mb-0">
+            &copy; 2026 Moda Urbana - Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+    let servicios = document.getElementsByClassName("list-group-item");
+
+    for (let i = 0; i < servicios.length; i++) {
+
+        servicios[i].style.color = "black";
+
+        servicios[i].innerText = [
+    "Asesoría de estilo urbano",
+    "Personalización de prendas",
+    "Venta de ropa urbana"
+][i];
+
+    }
+</script>
+
+</body>
+
+</html>
